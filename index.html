@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Demo-form</title>
+</head>
+<body>
+    <form class="demo-form">
+        <fieldset class="wrapper">
+            <legend>Подсказки по организациям</legend>
+        <label><strong>Компания или ИП</strong> <br>
+            <input type="text" id="ajax" list="json-datalist" class="company__name" placeholder="e.g. datalist" autofocus>
+            <datalist id="json-datalist"></datalist>
+            <br>
+            Организация (LEGAL)
+        </label>
+        <label>Краткое наименование<br>
+            <input type="text" class="company__briefly" >
+        </label>
+        <label>Полное наименование<br>
+            <input type="text" class="company__complete">
+        </label>
+        <label>ИНН/КПП<br>
+            <input type="text" class="company__INN">
+        </label>
+        <label>Адрес<br>
+            <input type="text" class="company__address">
+        </label>
+        </fieldset>
+    </form>
+<script src="app.js"></script>
+<script src="app-web.js"></script>
+</body>
+</html>
