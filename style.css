@@ -1,8 +1,14 @@
+.demo-form {
+
+    max-width: 500px;
+}
+
 .wrapper {
     display: grid;
     font-size: 30px;
+
 }
 input {
-    width: 500px;
+
     height: 40px;
 }
