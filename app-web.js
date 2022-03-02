@@ -7,22 +7,25 @@ class MyForm extends HTMLElement {
         this.innerHTML = `
         <form class="demo-form">
         <fieldset class="wrapper">
-            <legend>Подсказки по организациям</legend>
+            <legend><strong>Подсказки по организациям</strong></legend>
         <label><strong>Компания или ИП</strong> <br>
-            <input type="text" id="ajax" list="json-datalist" class="company__name" placeholder="e.g. datalist" autofocus>
+            <input type="text" id="ajax" list="json-datalist" class="company__name" placeholder="введите название организации" autofocus>
             <datalist id="json-datalist"></datalist>
-            <br>
             Организация (LEGAL)
         </label>
+        <hr>
         <label>Краткое наименование<br>
             <input type="text" class="company__briefly" >
         </label>
+        <hr>
         <label>Полное наименование<br>
             <input type="text" class="company__complete">
         </label>
+        <hr>
         <label>ИНН/КПП<br>
             <input type="text" class="company__INN">
         </label>
+        <hr>
         <label>Адрес<br>
             <input type="text" class="company__address">
         </label>
